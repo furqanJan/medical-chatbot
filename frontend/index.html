@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Furqii Chat Bot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+  <!-- ================= LOGIN BOX ================= -->
+  <div id="loginPage" class="login-box">
+    <h2>Login</h2>
+    <input id="username" placeholder="Username" />
+    <input id="password" type="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="loginMsg"></p>
+  </div>
+
+  <!-- ================= CHAT APP ================= -->
+  <div id="chatPage" class="hidden">
+
+    <header class="app-header">
+      <h1>Furqii Chat Bot</h1>
+      <span>WHO Medical Assistant</span>
+      <small id="whoami"></small>
+    </header>
+
+    <main id="chatBox" class="chat-area"></main>
+
+    <footer class="input-bar">
+      <input
+        id="question"
+        type="text"
+        placeholder="Send a message…"
+        onkeydown="handleEnter(event)"
+      />
+      <button class="send" onclick="askQuestion()">➤</button>
+    </footer>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

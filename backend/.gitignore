@@ -1,0 +1,7 @@
+# Ignore virtual environment folder
+.venv/
+venv/
+
+# You can also add other common Python ignore patterns:
+__pycache__/
+*.pyc

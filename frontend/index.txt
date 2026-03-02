@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Furqii Chat Bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- LOGIN SCREEN -->
+<div class="page" id="loginPage">
+  <div class="card">
+    <h1>Furqii Chat Bot</h1>
+    <p class="muted">WHO PDF–based medical assistant</p>
+
+    <label>Username</label>
+    <input id="username" placeholder="furqan" />
+
+    <label>Password</label>
+    <input id="password" type="password" placeholder="••••" />
+
+    <button class="primary" onclick="login()">Login</button>
+    <p class="muted" id="loginMsg"></p>
+  </div>
+</div>
+
+<!-- CHAT SCREEN -->
+<div class="app hidden" id="chatPage">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">🩺</div>
+      <div>
+        <div class="title">Furqii</div>
+        <div class="muted" id="whoami">Not logged in</div>
+      </div>
+    </div>
+
+    <button class="btn" onclick="newChat()">＋ New chat</button>
+    <button class="btn ghost" onclick="logout()">Logout</button>
+
+    <div class="muted small" style="margin-top:auto;">
+      Local history saved in browser
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <div class="h">Furqii Chat Bot</div>
+        <div class="muted small">Answers only from WHO PDF evidence</div>
+      </div>
+    </header>
+
+    <section id="chatBox" class="chat"></section>
+
+    <footer class="composer">
+      <input
+        id="question"
+        placeholder="Send a message…"
+        onkeydown="handleEnter(event)"
+      />
+      <button class="send" onclick="askQuestion()">➤</button>
+    </footer>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

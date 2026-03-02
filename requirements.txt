@@ -1,0 +1,32 @@
+# ── Web Framework ──
+fastapi
+uvicorn
+
+# ── AI / LLM / RAG ──
+langchain
+langchain-community
+langchain-text-splitters
+langchain-huggingface
+sentence-transformers
+
+# ── Vector DB ──
+pinecone
+
+# ── PDF Loading ──
+pypdf
+
+# ── Auth ──
+bcrypt
+python-dotenv
+
+# ── Google OAuth (optional) ──
+google-auth
+
+# ── HTTP client ──
+requests
+
+# ── Database ──
+# SQLite is built into Python — no extra install needed.
+
+# ── Frontend ──
+streamlit
