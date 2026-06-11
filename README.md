@@ -1,4 +1,4 @@
-﻿# Medical RAG Chatbot
+# Medical RAG Chatbot
 
 ## Description
 
