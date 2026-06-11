@@ -1,23 +1,42 @@
-## Medical RAG Chatbot
+﻿# Medical RAG Chatbot
 
-### Features
-- PDF-based Retrieval-Augmented Generation (RAG)
-- Semantic search using vector embeddings
-- Context memory (conversation window)
-- Cache for repeated queries
-- Modular LLM layer (pluggable)
+## Description
 
-### Architecture
-User Query → Cache → Context Memory → Vector DB → PDF Chunks → Answer
+A FastAPI-based medical retrieval-augmented generation chatbot with semantic search, cache support, session memory, authentication, and vector database integration.
 
-### Current Mode
-- Extractive RAG (PDF-grounded answers)
-- LLM layer intentionally disabled due to offline constraints
+## Key Features
 
-### Tech Stack
+- FastAPI API backend
+- PDF-grounded retrieval architecture
+- Semantic embeddings and vector search
+- Cache and conversation memory support
+- Username/password auth and optional Google OAuth
+
+## Tech Stack
+
+- Python
 - FastAPI
 - LangChain
-- HuggingFace embeddings
-- FAISS / vector store
-- Python 3.11
-q
+- Sentence Transformers
+- Pinecone
+- Streamlit
+- bcrypt
+
+## Installation
+
+pip install -r requirements.txt
+
+## Usage
+
+Configure environment variables, then run `uvicorn backend.api:app --reload` from the repository root.
+
+## Screenshots
+
+![Demo placeholder](screenshots/demo.svg)
+
+Add project screenshots to the `screenshots/` folder. Replace `demo.svg` with the actual image filename when screenshots are available.
+
+## License
+
+No license file is currently included. Add a license before reusing, distributing, or publishing this project for public collaboration.
+
